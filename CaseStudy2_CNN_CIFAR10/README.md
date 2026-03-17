@@ -1,45 +1,62 @@
-# Case Study 2: CNN Image Classification on CIFAR-10
+# 🖼️ Image Classification using CNN (CIFAR-10)
 
-This project implements a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset.
+## 📌 Overview
 
-## Dataset
+This project implements a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset into 10 different categories such as airplane, car, bird, cat, etc.
 
-CIFAR-10 contains 60,000 color images of size 32x32 belonging to 10 classes.
+---
 
-Classes:
-- Airplane
-- Automobile
-- Bird
-- Cat
-- Deer
-- Dog
-- Frog
-- Horse
-- Ship
-- Truck
+## ⚙️ Technologies Used
 
-## CNN Architecture
+* Python
+* TensorFlow / Keras
+* NumPy
+* Matplotlib
 
-Input: 32x32x3
+---
 
-Conv2D (32 filters, 3x3)
-MaxPooling (2x2)
+## 📂 Dataset
 
-Conv2D (64 filters, 3x3)
-MaxPooling (2x2)
+* **CIFAR-10 Dataset**
+* Contains 60,000 images (32x32 RGB)
+* 10 Classes:
 
-Conv2D (64 filters)
+  * Airplane, Automobile, Bird, Cat, Deer
+  * Dog, Frog, Horse, Ship, Truck
 
-Flatten
+---
 
-Dense (128)
+## 🧠 Model Architecture
 
-Output Dense (10 Softmax)
+* Convolutional Layers (Conv2D) for feature extraction
+* MaxPooling layers for dimensionality reduction
+* Flatten layer to convert features into vector
+* Dense layers for classification
+* Softmax activation for multi-class output
 
-## Concepts Used
+---
 
-- Convolutional Neural Networks
-- Feature Extraction
-- Pooling
-- Softmax Classification
-- Adam Optimizer
+## 🚀 Methodology
+
+* Loaded CIFAR-10 dataset from Keras
+* Normalized pixel values (0–255 → 0–1)
+* Built CNN model using Sequential API
+* Trained model for 10 epochs
+* Evaluated performance on test data
+* Visualized predictions and accuracy
+
+---
+
+## 📊 Results
+
+* Achieved ~71% test accuracy
+* Training and validation accuracy plotted
+* Model successfully predicts image classes
+
+---
+
+## 📌 Conclusion
+
+The CNN model effectively learns image features and performs multi-class classification on CIFAR-10. Performance can be further improved using deeper architectures or data augmentation.
+
+---
