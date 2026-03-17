@@ -1,34 +1,61 @@
-# Case Study 3: Brain Tumor Detection using CNN
+# 🧠 Brain Tumor Detection using CNN with Grad-CAM
 
-This project implements a Convolutional Neural Network (CNN) to classify brain MRI images into:
+## 📌 Overview
 
-- Tumor
-- No Tumor
+This project detects brain tumors from MRI images using a deep learning model based on MobileNetV2. It also provides visual explanations using Grad-CAM to highlight the regions responsible for predictions.
 
-## Image Size
-224 x 224 x 3
+---
 
-## CNN Architecture
+## ⚙️ Technologies Used
 
-Conv2D (32 filters)
-MaxPooling
+* Python
+* TensorFlow / Keras
+* OpenCV
+* Matplotlib & Seaborn
+* Scikit-learn
 
-Conv2D (64 filters)
-MaxPooling
+---
 
-Conv2D (128 filters)
-MaxPooling
+## 📂 Dataset
 
-Flatten
+* Brain MRI Images for Brain Tumor Detection (Navoneel)
+* Classes:
 
-Dense (128)
+  * **Yes** (Tumor)
+  * **No** (No Tumor)
 
-Output (2 neurons Softmax)
+---
 
-## Concepts Implemented
+## 🧠 Methodology
 
-- Medical Image Classification
-- Convolutional Neural Networks
-- Image Preprocessing
-- Model Training
-- Performance Evaluation
+* Image preprocessing and normalization
+* Train-validation split using ImageDataGenerator
+* Transfer learning with MobileNetV2
+* Binary classification using sigmoid activation
+* Model evaluation using accuracy, confusion matrix, and classification report
+* Grad-CAM for visual interpretability
+
+---
+
+## 📊 Results
+
+* Achieved good accuracy on validation data
+* Confusion matrix used to analyze performance
+* Grad-CAM successfully highlights tumor regions
+
+---
+
+## 🚀 Key Features
+
+* Efficient and lightweight model
+* Handles binary classification
+* Provides explainable AI using Grad-CAM
+* Suitable for medical image analysis
+
+---
+
+## 📌 Conclusion
+
+The model effectively detects brain tumors from MRI images and enhances trust through visual explanations, making it useful for assisting medical diagnosis.
+
+---
