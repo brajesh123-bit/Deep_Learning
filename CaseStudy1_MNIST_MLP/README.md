@@ -1,30 +1,67 @@
-# Handwritten Digit Recognition using MLP (NumPy)
+# 🔢 Handwritten Digit Classification using Neural Network (From Scratch)
 
-This project implements a Multi-Layer Perceptron (MLP) from scratch using NumPy to classify handwritten digits from the MNIST dataset.
+## 📌 Overview
 
-## Architecture
+This project implements a neural network from scratch (without using deep learning frameworks) to classify handwritten digits from the MNIST dataset. The model is built using NumPy and trained using forward and backward propagation.
 
-784 → 128 → 64 → 10
+---
 
-Input Layer: 784 neurons  
-Hidden Layer 1: 128 neurons (ReLU)  
-Hidden Layer 2: 64 neurons (ReLU)  
-Output Layer: 10 neurons (Softmax)
+## ⚙️ Technologies Used
 
-## Features
+* Python
+* NumPy
+* Matplotlib
+* Keras (only for dataset loading)
 
-- Forward Propagation
-- Backpropagation
-- Gradient Descent Optimization
-- Softmax Classification
-- Cross Entropy Loss
+---
 
-## Dataset
+## 📂 Dataset
 
-MNIST Handwritten Digits
+* **MNIST Dataset**
+* 70,000 grayscale images (28×28 pixels)
+* Classes: Digits from **0 to 9**
 
-## Accuracy
+---
 
-~90% depending on training conditions.
+## 🧠 Model Architecture
 
-## Run
+* Input Layer: 784 neurons (flattened 28×28 image)
+* Hidden Layer: 128 neurons (ReLU activation)
+* Output Layer: 10 neurons (Softmax activation)
+
+---
+
+## 🚀 Methodology
+
+* Loaded and normalized image data
+* Flattened images into vectors
+* Applied one-hot encoding to labels
+* Implemented forward propagation
+* Computed loss using cross-entropy
+* Performed backpropagation manually
+* Updated weights using gradient descent
+
+---
+
+## 📊 Results
+
+* Achieved ~94% test accuracy
+* Loss decreases consistently over epochs
+* Model correctly predicts handwritten digits
+
+---
+
+## 📌 Key Features
+
+* Neural network implemented from scratch
+* No high-level deep learning libraries used
+* Demonstrates core concepts of backpropagation
+* Educational and easy to understand
+
+---
+
+## 📌 Conclusion
+
+The model successfully classifies handwritten digits using basic neural network principles. This project helps in understanding the internal working of deep learning models without relying on built-in frameworks.
+
+---
